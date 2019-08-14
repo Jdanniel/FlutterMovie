@@ -14,6 +14,7 @@ class Peliculas {
 }
 
 class Pelicula {
+  String uniqueId;
   int voteCount;
   int id;
   bool video;
@@ -74,8 +75,8 @@ class Pelicula {
 
   getBackgroundImg(){
 
-    if(posterPath == null){
-      return 'https://cdn11.bigcommerce.com/s-hcp6qon/stencil/ceeda4b0-2ef0-0137-a2f3-0242ac11000a/icons/icon-no-image.svg';
+    if(backdropPath == null){
+      return 'http://bbpa.org/wp-content/uploads/2018/11/noimage.jpg';
     }else{
       return 'https://image.tmdb.org/t/p/w500/$backdropPath';
     }
